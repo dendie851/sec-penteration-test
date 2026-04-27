@@ -1,20 +1,7 @@
 # 🛡️ Security Penetration Testing Lab
 
-## 📑 Table of Contents
-- [📖 Background: Why is Penetration Testing Important?](#-background-why-is-penetration-testing-important)
-- [1. Penetration Testing Technical Concepts](#1-penetration-testing-technical-concepts)
-  - [1.1 DAST (Dynamic Application Security Testing)](#11-dast-dynamic-application-security-testing)
-  - [1.2 SAST (Static Application Security Testing)](#12-sast-static-application-security-testing)
-  - [1.3 Vulnerability Scanning (Container Security)](#13-vulnerability-scanning-container-security)
-  - [1.4 Network Security Testing & Anti-DDoS](#14-network-security-testing--anti-ddos)
-- [2. Understanding DAST & OWASP Top 10](#2-understanding-dast--owasp-top-10)
-- [3. OWASP ZAP: The DAST Powerhouse](#3-owasp-zap-the-dast-powerhouse)
-- [4. Lab Implementation Guide](#4-lab-implementation-guide)
-- [5. Vulnerability Analysis & Reports](#5-vulnerability-analysis--reports)
-- [6. Advanced Features & Exploration](#6-advanced-features--exploration)
-- [🛡️ Conclusion](#️-conclusion)
 
----
+
 
 ### 📖 Background: Why is Penetration Testing Important?
 
@@ -27,7 +14,44 @@ In today's digital era, applications are not just lines of code, but the heart o
 
 This repository is designed as a practical lab to understand how security testing works end-to-end. **Specifically, this guide strongly emphasizes DAST using Open-Source DAST tools (such as OWASP ZAP) to find vulnerabilities in running applications.**
 
----
+
+## 📑 Table of Contents
+- [📖 Background: Why is Penetration Testing Important?](#-background-why-is-penetration-testing-important)
+- [1. Penetration Testing Technical Concepts](#1-penetration-testing-technical-concepts)
+  - [1.1 DAST (Dynamic Application Security Testing)](#11-dast-dynamic-application-security-testing)
+  - [1.2 SAST (Static Application Security Testing)](#12-sast-static-application-security-testing)
+  - [1.3 Vulnerability Scanning (Container Security)](#13-vulnerability-scanning-container-security)
+  - [1.4 Network Security Testing & Anti-DDoS](#14-network-security-testing--anti-ddos)
+- [2. Understanding DAST & OWASP Top 10](#2-understanding-dast--owasp-top-10)
+  - [OWASP Top 10](#owasp-top-10)
+    - [1. Broken Access Control](#1-broken-access-control)
+    - [2. Cryptographic Failures](#2-cryptographic-failures)
+    - [3. Injection (SQLi, NoSQL, etc.)](#3-injection-sqli-nosql-etc)
+    - [4. Insecure Design](#4-insecure-design)
+    - [5. Security Misconfiguration](#5-security-misconfiguration)
+    - [6. Vulnerable and Outdated Components](#6-vulnerable-and-outdated-components)
+    - [7. Identification and Authentication Failures](#7-identification-and-authentication-failures)
+    - [8. Software and Data Integrity Failures](#8-software-and-data-integrity-failures)
+    - [9. Security Logging and Monitoring Failures](#9-security-logging-and-monitoring-failures)
+    - [10. Server-Side Request Forgery (SSRF)](#10-server-side-request-forgery-ssrf)
+- [3. OWASP ZAP: The DAST Powerhouse](#3-owasp-zap-the-dast-powerhouse)
+  - [Main Functions in This Lab](#main-functions-in-this-lab)
+- [4. Lab Implementation Guide](#4-lab-implementation-guide)
+  - [🚀 Step 1: Installation & Deployment](#-step-1-installation--deployment)
+  - [🌐 Step 2: Access Dashboard & Target](#-step-2-access-dashboard--target)
+  - [🔎 Step 3: Proxy Configuration (Manual Explore)](#-step-3-proxy-configuration-manual-explore)
+  - [⚡ Step 4: Running Security Scans (Automated)](#-step-4-running-security-scans-automated)
+- [5. Vulnerability Analysis & Reports](#5-vulnerability-analysis--reports)
+  - [🚩 List of Findings (Alerts)](#-list-of-findings-alerts)
+  - [💡 Vulnerability Details & Solutions](#-vulnerability-details--solutions)
+  - [🔍 Additional Information (Info Disclosure)](#-additional-information-info-disclosure)
+  - [📊 Final Report (Reporting)](#-final-report-reporting)
+- [6. Advanced Features & Exploration](#6-advanced-features--exploration)
+  - [Authentication Handling](#authentication-handling)
+  - [Active Recording](#active-recording)
+- [🛡️ Conclusion](#️-conclusion)
+
+
 
 ## 1. Penetration Testing Technical Concepts
 
@@ -62,7 +86,7 @@ Protects infrastructure from network-level attacks such as Brute Force and DDoS 
 
 ![Anti-DDoS Implementation](ss/ss-anti-dos.png)
 
----
+
 
 ## 2. Understanding DAST & OWASP Top 10
 
@@ -70,30 +94,49 @@ Protects infrastructure from network-level attacks such as Brute Force and DDoS 
 
 ### OWASP Top 10
 The testing in this lab refers to the **OWASP Top 10** standard, which is a list of the 10 most critical web application security risks, including:
-1. **Broken Access Control**
-2. **Cryptographic Failures**
-3. **Injection (SQLi, NoSQL, etc.)**
-4. **Insecure Design**
-5. **Security Misconfiguration**
-6. **Vulnerable and Outdated Components**
-7. **Identification and Authentication Failures**
-8. **Software and Data Integrity Failures**
-9. **Security Logging and Monitoring Failures**
-10. **Server-Side Request Forgery (SSRF)**
+#### 1. Broken Access Control
+Restrictions on what authenticated users are allowed to do are not properly enforced. Attackers can exploit these flaws to access unauthorized functionality or data.
 
----
+#### 2. Cryptographic Failures
+Sensitive data (like passwords, credit cards, or health records) is not properly protected, leading to data exposure. This often involves missing or weak encryption.
+
+#### 3. Injection (SQLi, NoSQL, etc.)
+Untrusted data is sent to an interpreter as part of a command or query. The attacker's hostile data can trick the interpreter into executing unintended commands.
+
+#### 4. Insecure Design
+Flaws in application design and architecture, emphasizing the need for more use of threat modeling, secure design patterns, and reference architectures.
+
+#### 5. Security Misconfiguration
+Inaccurate or incomplete security configurations, such as open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information.
+
+#### 6. Vulnerable and Outdated Components
+Using software components (libraries, frameworks, and other software modules) with known vulnerabilities or that are unsupported.
+
+#### 7. Identification and Authentication Failures
+When user identities, passwords, or session management are not properly handled, allowing attackers to compromise passwords or assume other users' identities.
+
+#### 8. Software and Data Integrity Failures
+Code and infrastructure that do not protect against integrity violations, such as software updates, critical data, and CI/CD pipelines without verifying their integrity.
+
+#### 9. Security Logging and Monitoring Failures
+Without proper logging and monitoring, breaches cannot be detected. Attackers rely on this lack of monitoring to achieve their goals without being noticed.
+
+#### 10. Server-Side Request Forgery (SSRF)
+Occurs whenever a web application fetches a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination.
+
+
 
 ## 3. OWASP ZAP: The DAST Powerhouse
 
 **OWASP ZAP (Zed Attack Proxy)** is the world's most popular open-source security tool for performing DAST.
 
-### Main Functions in This Lab:
+### Main Functions in This Lab
 - **Spidering:** Crawls the entire application URL structure.
 - **Active Scanning:** Performs simulated attacks to find SQL Injection, XSS, etc.
 - **AJAX Spidering:** Crawls modern applications that use heavy JavaScript/AJAX.
 - **Proxying:** Captures traffic between the browser and the server for manual analysis.
 
----
+
 
 ## 4. Lab Implementation Guide
 
@@ -130,7 +173,7 @@ You can run automated scans using the **Automated Scan** or **AJAX Spider** feat
 | ![Auto Scan](ss/5-owaps-zap-auto-scan.png) | ![AJAX Scan](ss/5-owaps-zap-auto-scan-ajax-scan.png) |
 | ![Scan Launch](ss/27-owaps-test-scan-target-untuk-test-url-sebagai-target-yg-akan-scan-dan-automatic-launch-browser.png) | ![Vulnerability Scan](ss/6-owaps-zap-auto-scan-vurnability.png) |
 
----
+
 
 ## 5. Vulnerability Analysis & Reports
 
@@ -164,17 +207,20 @@ Generate reports for stakeholders in various formats.
 ![Full Report](ss/21-owaps-zap-report-show.png)
 ![Report Detail](ss/22-owaps-zap-report-show-2.png)
 
----
+
 
 ## 6. Advanced Features & Exploration
 Some additional features practiced in this lab:
 
-- **Authentication Handling:** Scanning areas that require login manually, using ZAP auth, or specifying the target URL to scan.
-  ![Auth Scan](ss/25-owaps-test-scan-target-have_auth-set-manual-explore.png)
-- **Active Recording:** Recording user activity for further analysis.
-  ![Active Record](ss/31-owaps-test-scan-target-manul-show-port-proxy-zap-in-chrome-active-record.png)
+### Authentication Handling
+Scanning areas that require login manually, using ZAP auth, or specifying the target URL to scan.
+![Auth Scan](ss/25-owaps-test-scan-target-have_auth-set-manual-explore.png)
 
----
+### Active Recording
+Recording user activity for further analysis.
+![Active Record](ss/31-owaps-test-scan-target-manul-show-port-proxy-zap-in-chrome-active-record.png)
+
+
 
 ## 🛡️ Conclusion
 By combining **SAST** at the code level and **DAST** at the running application level, we can minimize attack risks before the application goes to production. This lab proves how crucial security testing is in the Software Development Life Cycle (SDLC).
