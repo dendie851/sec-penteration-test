@@ -1,0 +1,1015 @@
+2026-04-24 10:11:19,553 [Webswing-Launch-Main] INFO  Constant - Copying default configuration to /home/zap/.ZAP/config.xml
+2026-04-24 10:11:19,864 [Webswing-Launch-Main] INFO  Constant - Creating directory /home/zap/.ZAP/session
+2026-04-24 10:11:19,867 [Webswing-Launch-Main] INFO  Constant - Creating directory /home/zap/.ZAP/dirbuster
+2026-04-24 10:11:19,870 [Webswing-Launch-Main] INFO  Constant - Creating directory /home/zap/.ZAP/fuzzers
+2026-04-24 10:11:19,873 [Webswing-Launch-Main] INFO  Constant - Creating directory /home/zap/.ZAP/plugin
+2026-04-24 10:11:20,062 [Webswing-Launch-Main] INFO  GuiBootstrap - ZAP 2.17.0 started 24/04/2026, 10:11:20 with home: /home/zap/.ZAP/ cores: 8 maxMemory: 1 GB
+2026-04-24 10:11:20,367 [AWT-EventQueue-0] INFO  AbstractParam - Setting config stats.pkg.webswing = 1 was null
+2026-04-24 10:11:22,717 [AWT-EventQueue-0] INFO  View - Initialising View
+2026-04-24 10:11:46,499 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, version=26.0.0], [id=ascanrules, version=81.0.0], [id=authhelper, version=0.38.0], [id=automation, version=0.59.0], [id=bruteforce, version=20.0.0], [id=callhome, version=0.21.0], [id=client, version=0.22.0], [id=commonlib, version=1.41.0], [id=database, version=0.9.0], [id=diff, version=18.0.0], [id=directorylistv1, version=9.0.0], [id=domxss, version=24.0.0], [id=encoder, version=1.9.0], [id=exim, version=0.19.0], [id=formhandler, version=6.8.0], [id=fuzz, version=13.16.0], [id=gettingStarted, version=20.0.0], [id=graaljs, version=0.14.0], [id=graphql, version=0.33.0], [id=help, version=22.0.0], [id=hud, version=0.19.0], [id=insights, version=0.3.0], [id=invoke, version=17.0.0], [id=network, version=0.26.0], [id=oast, version=0.24.0], [id=onlineMenu, version=15.0.0], [id=openapi, version=55.0.0], [id=postman, version=0.9.0], [id=pscan, version=0.6.0], [id=pscanrules, version=73.0.0], [id=quickstart, version=55.0.0], [id=replacer, version=22.0.0], [id=reports, version=0.44.0], [id=requester, version=7.10.0], [id=retest, version=0.11.0], [id=retire, version=0.56.0], [id=reveal, version=10.0.0], [id=scanpolicies, version=0.8.0], [id=scripts, version=45.18.0], [id=selenium, version=15.47.0], [id=sequence, version=9.0.0], [id=soap, version=30.0.0], [id=spider, version=0.20.0], [id=spiderAjax, version=23.30.0], [id=tips, version=16.0.0], [id=webdriverlinux, version=192.0.0], [id=websocket, version=36.0.0], [id=zest, version=48.13.0]]
+2026-04-24 10:11:46,511 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Loading extensions
+2026-04-24 10:11:47,848 [ZAP-BootstrapGUI] INFO  TlsUtils - Using supported SSL/TLS protocols: [TLSv1.2, TLSv1.3]
+2026-04-24 10:11:48,733 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Extensions loaded
+2026-04-24 10:11:50,527 [ZAP-BootstrapGUI] INFO  FlywayExecutor - Database: jdbc:hsqldb:file:/home/zap/.ZAP/session/untitled1 (HSQL Database Engine 2.7)
+2026-04-24 10:11:50,667 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."CLIENT_FLYWAY_SCHEMA_HISTORY" does not exist yet
+2026-04-24 10:11:50,674 [ZAP-BootstrapGUI] INFO  DbValidate - Successfully validated 1 migration (execution time 00:00.037s)
+2026-04-24 10:11:50,715 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."CLIENT_FLYWAY_SCHEMA_HISTORY" with baseline ...
+2026-04-24 10:11:50,805 [ZAP-BootstrapGUI] INFO  DbBaseline - Successfully baselined schema with version: 0
+2026-04-24 10:11:50,831 [ZAP-BootstrapGUI] INFO  DbMigrate - Current version of schema "PUBLIC": 0
+2026-04-24 10:11:50,852 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create history table"
+2026-04-24 10:11:50,888 [ZAP-BootstrapGUI] INFO  DbMigrate - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.014s)
+2026-04-24 10:11:52,357 [ZAP-BootstrapGUI] INFO  FlywayExecutor - Database: jdbc:hsqldb:file:/home/zap/.ZAP/session/untitled1 (HSQL Database Engine 2.7)
+2026-04-24 10:11:52,381 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" does not exist yet
+2026-04-24 10:11:52,383 [ZAP-BootstrapGUI] INFO  DbValidate - Successfully validated 6 migrations (execution time 00:00.005s)
+2026-04-24 10:11:52,390 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" with baseline ...
+2026-04-24 10:11:52,405 [ZAP-BootstrapGUI] INFO  DbBaseline - Successfully baselined schema with version: 0
+2026-04-24 10:11:52,416 [ZAP-BootstrapGUI] INFO  DbMigrate - Current version of schema "PUBLIC": 0
+2026-04-24 10:11:52,444 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create tables"
+2026-04-24 10:11:52,482 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "2 - Create storage tables"
+2026-04-24 10:11:52,508 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "3 - Improve diags"
+2026-04-24 10:11:52,523 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "4 - Web element selector"
+2026-04-24 10:11:52,547 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "5 - Af plan"
+2026-04-24 10:11:52,565 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "6 - Auth report data"
+2026-04-24 10:11:52,580 [ZAP-BootstrapGUI] INFO  DbMigrate - Successfully applied 6 migrations to schema "PUBLIC", now at version v6 (execution time 00:00.054s)
+2026-04-24 10:11:53,788 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Auto-update Extension - Allows ZAP to check for updates
+2026-04-24 10:11:54,044 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Options Extension - Options Extension
+2026-04-24 10:11:54,581 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Edit Menu Extension - Edit Menu Extension
+2026-04-24 10:11:54,588 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing API Extension - Provides a rest based API for controlling and accessing ZAP
+2026-04-24 10:11:54,653 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing History Extension - History Extension
+2026-04-24 10:11:54,920 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionReveal - Show hidden fields and enable disabled fields
+2026-04-24 10:11:54,937 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Search Extension - Search messages for strings and regular expressions
+2026-04-24 10:11:55,126 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Breakpoint Extension - Allows you to intercept and modify requests and responses
+2026-04-24 10:11:55,436 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scan Extension - Passive scanner
+2026-04-24 10:11:55,444 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alerts Extension - Allows you to view and manage alerts
+2026-04-24 10:11:55,901 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Active Scan Extension - Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2026-04-24 10:11:56,222 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionSequence - ExtensionSequence
+2026-04-24 10:11:56,245 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Standard Menus Extension - A set of common popup menus for miscellaneous tasks
+2026-04-24 10:11:56,282 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionBruteForce - Forced browsing of files and directories using code from the OWASP DirBuster tool
+2026-04-24 10:11:56,410 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Compare Extension - Compares 2 sessions and generates an HTML file showing the differences
+2026-04-24 10:11:56,417 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionInvoke - Invoke external applications passing context related information such as URLs and parameters
+2026-04-24 10:11:56,470 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Anti-CSRF Extension - Handles anti cross site request forgery (CSRF) tokens
+2026-04-24 10:11:56,533 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Extension - Authentication Extension
+2026-04-24 10:11:56,581 [ZAP-BootstrapGUI] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+2026-04-24 10:11:56,589 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Users Extension - Users Extension
+2026-04-24 10:11:56,598 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Parameters Extension - Summarise and analyse FORM and URL parameters as well as cookies
+2026-04-24 10:11:56,653 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Script Extension - Script integration
+2026-04-24 10:11:56,731 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionScripts - Scripting console, supports all JSR 223 scripting languages
+2026-04-24 10:11:57,318 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Forced User Extension - Forced User Extension
+2026-04-24 10:11:57,333 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Sessions Extension - Extension handling HTTP sessions
+2026-04-24 10:11:57,412 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionZest - Zest is a specialized scripting language, originally, from Mozilla specifically designed to be used in security tools
+2026-04-24 10:11:58,486 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionDiff - ExtensionDiff
+2026-04-24 10:11:58,492 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Post Table View Extension - HTTP Panel Post Table View Extension
+2026-04-24 10:11:58,568 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Encoder Addon - Adds support for scriptable encoders to ZAP.
+2026-04-24 10:11:59,029 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Session Management Extension - Session Management Extension
+2026-04-24 10:11:59,047 [ZAP-BootstrapGUI] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+2026-04-24 10:11:59,050 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Form Table View Extension - HTTP Panel Form Table View Extension
+2026-04-24 10:11:59,078 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSockets Support - Capture messages from WebSockets with the ability to set breakpoints.
+2026-04-24 10:11:59,242 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP/WSDL Support - Allows you to import a WSDL file containing operations which ZAP will access, adding them to the Sites tree.
+2026-04-24 10:11:59,250 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Core UI Extension - Core UI related functionality.
+2026-04-24 10:11:59,256 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authorization Extension - Authorization Extension
+2026-04-24 10:11:59,264 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Requester - Allows to manually edit and send messages.
+2026-04-24 10:11:59,522 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing AJAX Spider - AJAX Spider, uses Crawljax
+2026-04-24 10:11:59,714 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebDriver Provider - Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2026-04-24 10:11:59,834 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionClientIntegration - Client Side Integration
+2026-04-24 10:12:00,065 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Refresh Sites Tree Extension - Adds menu item to refresh the Sites tree
+2026-04-24 10:12:00,070 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Help Extension - ZAP User Guide
+2026-04-24 10:12:00,344 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Call Home - Handles all of the calls to ZAP services
+2026-04-24 10:12:00,351 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Network Extension - Provides core networking capabilities.
+2026-04-24 10:12:01,043 [ZAP-BootstrapGUI] INFO  ConnectionOptions - Unsafe SSL/TLS renegotiation disabled.
+2026-04-24 10:12:01,048 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Extension Configuration Extension - Allows you to configure which extensions are loaded when ZAP starts
+2026-04-24 10:12:01,163 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Combined HTTP Panels Extension - Combined HTTP Panels Extension
+2026-04-24 10:12:01,226 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Hex View Extension - HTTP Panel Hex View Extension
+2026-04-24 10:12:01,301 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Image View Extension - HTTP Panel Image View Extension
+2026-04-24 10:12:01,320 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Query Table View Extension - HTTP Panel Query Table View Extension
+2026-04-24 10:12:01,352 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Syntax Highlighter View Extension - HTTP Panel Syntax Highlighter View Extension
+2026-04-24 10:12:01,493 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Keyboard Configuration Extension - Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2026-04-24 10:12:01,531 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Scanner Rule Configuration Extension - Active and passive rule configuration
+2026-04-24 10:12:01,556 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Statistics Extension - Statistics
+2026-04-24 10:12:01,576 [ZAP-BootstrapGUI] INFO  ExtensionStats - Start recording in memory stats
+2026-04-24 10:12:01,581 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Custom Pages Extension - Custom Pages Definition
+2026-04-24 10:12:01,590 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Sequence Automation - Sequence Automation Framework Integration
+2026-04-24 10:12:01,611 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scan Rules - Release status passive scan rules.
+2026-04-24 10:12:01,613 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Spider Automation - Client Spider Automation Framework Integration
+2026-04-24 10:12:01,619 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Map Import/Export - Client Map export support for Import/Export.
+2026-04-24 10:12:01,630 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Zest Script Recording Support - Allows recording client events as Zest scripts.
+2026-04-24 10:12:01,640 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionDomXSS - DOM XSS Active Scan Rule
+2026-04-24 10:12:01,740 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionTipsAndTricks - Tips and Tricks
+2026-04-24 10:12:01,743 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Match and Replace - Easy way to replace strings in requests and responses
+2026-04-24 10:12:01,787 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Replacer Automation - Replacer Automation Framework Integration
+2026-04-24 10:12:01,794 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Scripts Automation Framework Integration - Scripts Automation
+2026-04-24 10:12:01,812 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Spider Extension - Spider used for automatically finding URIs on a site.
+2026-04-24 10:12:01,983 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Spider Automation - Spider Automation Integration
+2026-04-24 10:12:01,992 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP Automation - SOAP Automation Framework Integration
+2026-04-24 10:12:01,996 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP Spider - SOAP Spider Integration
+2026-04-24 10:12:02,000 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Retest - Facilitates the verification of presence/absence of certain alerts.
+2026-04-24 10:12:02,004 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Import - Allows you to spider and import OpenAPI (Swagger) definitions 
+2026-04-24 10:12:02,021 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Automation - OpenAPI Automation Framework Integration
+2026-04-24 10:12:02,026 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Scripts - Adds scripts relevant to OpenAPI specifications.
+2026-04-24 10:12:02,028 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Spider - OpenAPI Spider Integration
+2026-04-24 10:12:02,036 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Helper - Authentication Helper
+2026-04-24 10:12:02,534 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated Client Spider scan.
+2026-04-24 10:12:02,537 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Helper Reports - Authentication Helper Reports
+2026-04-24 10:12:02,544 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing AJAX Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated AJAX Spider scan.
+2026-04-24 10:12:02,547 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionGettingStarted - The ZAP Getting Started Guide
+2026-04-24 10:12:02,550 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Out-of-band Application Security Testing - Adds Out-of-band Application Security Testing functionality.
+2026-04-24 10:12:02,660 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OAST Scripts - Adds OAST scripts.
+2026-04-24 10:12:02,663 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Ajax Spider Automation - Ajax Spider Automation Framework Integration
+2026-04-24 10:12:02,676 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Database Extension - Provides databases and persistence capabilities.
+2026-04-24 10:12:02,678 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Automation Framework - Provides functionality to simplify using ZAP in an automated manner
+2026-04-24 10:12:02,780 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Zest Import/Export - Zest script export and import support for Import/Export.
+2026-04-24 10:12:02,789 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start panel  - Adds the Quick Start panel for scanning and exploring applications
+2026-04-24 10:12:02,980 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Ajax Spider integration - Add the option to use the Ajax Spider in the Quick Start scan
+2026-04-24 10:12:03,005 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start HUD Integration - HUD integration for the quick start panel
+2026-04-24 10:12:03,008 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Browser Launcher - Launch browsers preset proxying through ZAP
+2026-04-24 10:12:03,106 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Spider Integration - Adds the option to use the traditional Spider in the Quick Start scan.
+2026-04-24 10:12:03,111 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionAlertFilters - Context alert rules filter
+2026-04-24 10:12:03,136 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2026-04-24 10:12:03,140 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scanner Extension - Provides core passive scanning capabilities.
+2026-04-24 10:12:03,231 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scanner Automation Framework Extension - Provides jobs and result data related to the passive scanner.
+2026-04-24 10:12:03,234 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionHUD - Heads Up Display
+2026-04-24 10:12:04,217 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionHUDlaunch - ExtensionHUDlaunch
+2026-04-24 10:12:04,219 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionOnlineMenu - The Online menu links
+2026-04-24 10:12:04,223 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Report Generator - Templated and themed report generation functionality
+2026-04-24 10:12:04,232 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Report Generation Automation Integration - Report Generation Automation Integration
+2026-04-24 10:12:04,236 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSocket Fuzzer - Allows to fuzz WebSocket messages.
+2026-04-24 10:12:04,239 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSocket Message Editor - Provides the WebSocket Message Editor dialogues.
+2026-04-24 10:12:04,342 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Retire.js - Retire.js
+2026-04-24 10:12:04,345 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Vulnerable JS Library (Powered by Retire.js)
+2026-04-24 10:12:04,348 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Advance Fuzzer - Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2026-04-24 10:12:04,361 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Fuzzer - Allows to fuzz HTTP messages.
+2026-04-24 10:12:04,418 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionGraphQl - Allows you to inspect and attack GraphQL endpoints.
+2026-04-24 10:12:04,454 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraphQL Automation - GraphQL Automation Framework Integration
+2026-04-24 10:12:04,458 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraphQL Spider - GraphQL Spider Integration
+2026-04-24 10:12:04,460 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionInsights - Insights Extension
+2026-04-24 10:12:04,500 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2026-04-24 10:12:04,503 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Insights Reports Extension - Adds Insights to the report data
+2026-04-24 10:12:04,505 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Import/Export - Import and Export functionality supporting multiple formats.
+2026-04-24 10:12:04,534 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Import/Export Automation - Import/Export Automation Framework Integration
+2026-04-24 10:12:04,539 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Common Library - A library of shared functionality
+2026-04-24 10:12:04,564 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Postman Import - Allows you to spider and import Postman collections
+2026-04-24 10:12:04,570 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Postman Automation - Postman Automation Framework Integration
+2026-04-24 10:12:04,574 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionFormHandler - This extension allows a user to change the default values used for generated content (e.g. spiders, importers).
+2026-04-24 10:12:04,618 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraalVM JavaScript Engine Extension - Provides the GraalVM JavaScript engine for ZAP scripting.
+2026-04-24 10:12:05,366 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Active Scan Rules - Release status active scan rules
+2026-04-24 10:12:06,181 [ZAP-BootstrapGUI] ERROR ExtensionClientIntegration - Failed to get or create Firefox profile zap-client-profile
+2026-04-24 10:12:06,184 [ZAP-BootstrapGUI] INFO  ExtensionKeyboard - Initializing keyboard shortcuts
+2026-04-24 10:12:11,046 [ZAP-BootstrapGUI] INFO  CallbackService - Started callback service on 0.0.0.0:34565
+2026-04-24 10:12:11,173 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Anti-clickjacking Header
+2026-04-24 10:12:11,175 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Application Error Disclosure
+2026-04-24 10:12:11,179 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Big Redirect Detected (Potential Sensitive Information Leak)
+2026-04-24 10:12:11,180 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Re-examine Cache-control Directives
+2026-04-24 10:12:11,182 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Charset Mismatch
+2026-04-24 10:12:11,183 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Content Security Policy (CSP) Header Not Set
+2026-04-24 10:12:11,189 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: CSP
+2026-04-24 10:12:11,196 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Content-Type Header Missing
+2026-04-24 10:12:11,197 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie No HttpOnly Flag
+2026-04-24 10:12:11,199 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Loosely Scoped Cookie
+2026-04-24 10:12:11,201 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie without SameSite Attribute
+2026-04-24 10:12:11,210 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie Without Secure Flag
+2026-04-24 10:12:11,212 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cross-Domain Misconfiguration
+2026-04-24 10:12:11,214 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2026-04-24 10:12:11,217 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Absence of Anti-CSRF Tokens
+2026-04-24 10:12:11,219 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Directory Browsing
+2026-04-24 10:12:11,223 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Hash Disclosure
+2026-04-24 10:12:11,225 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Heartbleed OpenSSL Vulnerability (Indicative)
+2026-04-24 10:12:11,229 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: In Page Banner Information Leak
+2026-04-24 10:12:11,231 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Private IP Disclosure
+2026-04-24 10:12:11,234 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Session ID in URL Rewrite
+2026-04-24 10:12:11,242 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Debug Error Messages
+2026-04-24 10:12:11,247 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in URL
+2026-04-24 10:12:11,249 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2026-04-24 10:12:11,251 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Suspicious Comments
+2026-04-24 10:12:11,253 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Weak Authentication Method
+2026-04-24 10:12:11,255 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTP to HTTPS Insecure Transition in Form Post
+2026-04-24 10:12:11,257 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTPS to HTTP Insecure Transition in Form Post
+2026-04-24 10:12:11,259 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Insecure JSF ViewState
+2026-04-24 10:12:11,261 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Java Serialization Object
+2026-04-24 10:12:11,264 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Reverse Tabnabbing
+2026-04-24 10:12:11,266 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Secure Pages Include Mixed Content
+2026-04-24 10:12:11,268 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Modern Web Application
+2026-04-24 10:12:11,270 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: PII Disclosure
+2026-04-24 10:12:11,273 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Script Served From Malicious Domain (polyfill)
+2026-04-24 10:12:11,275 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Retrieved from Cache
+2026-04-24 10:12:11,277 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTP Server Response Header
+2026-04-24 10:12:11,280 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Strict-Transport-Security Header
+2026-04-24 10:12:11,284 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Sub Resource Integrity Attribute Missing
+2026-04-24 10:12:11,287 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Timestamp Disclosure
+2026-04-24 10:12:11,290 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable Charset
+2026-04-24 10:12:11,293 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie Poisoning
+2026-04-24 10:12:11,295 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable HTML Element Attribute (Potential XSS)
+2026-04-24 10:12:11,298 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable JavaScript Event (XSS)
+2026-04-24 10:12:11,302 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Off-site Redirect
+2026-04-24 10:12:11,306 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Username Hash Found
+2026-04-24 10:12:11,310 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Viewstate
+2026-04-24 10:12:11,314 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-AspNet-Version Response Header
+2026-04-24 10:12:11,318 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Backend-Server Header Information Leak
+2026-04-24 10:12:11,323 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-ChromeLogger-Data (XCOLD) Header Information Leak
+2026-04-24 10:12:11,332 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Content-Type-Options Header Missing
+2026-04-24 10:12:11,335 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Debug-Token Information Leak
+2026-04-24 10:12:11,340 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s)
+2026-04-24 10:12:11,343 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: ZAP is Out of Date
+2026-04-24 10:12:11,354 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Script Passive Scan Rules
+2026-04-24 10:12:11,358 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: WSDL File Detection
+2026-04-24 10:12:11,367 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Authentication Request Identified
+2026-04-24 10:12:11,372 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Session Management Response Identified
+2026-04-24 10:12:11,376 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Verification Request Identified
+2026-04-24 10:12:11,381 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Stats Passive Scan Rule
+2026-04-24 10:12:11,432 [ZAP-BootstrapGUI] INFO  ExtensionNetwork - Creating new root CA certificate.
+2026-04-24 10:12:12,971 [ZAP-BootstrapGUI] INFO  ExtensionNetwork - New root CA certificate created.
+2026-04-24 10:12:19,564 [AWT-EventQueue-0] INFO  Control - New Session
+2026-04-24 10:12:19,574 [AWT-EventQueue-0] INFO  Control - Create and Open Untitled Db
+2026-04-24 10:12:21,663 [ZAP-cfu] INFO  ExtensionAutoUpdate - There is/are 2 newer addons
+2026-04-24 10:13:06,726 [ZAP-QuickStart-AttackThread] ERROR ExtensionQuickStart - Connect to http://localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:3000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:684)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.lambda$connectSocket$0(PlainConnectionSocketFactory.java:85)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:84)
+	at org.apache.hc.client5.http.socket.ConnectionSocketFactory.connectSocket(ConnectionSocketFactory.java:113)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:181)
+	at org.apache.hc.client5.http.impl.io.ZapHttpClientConnectionOperator.connect(ZapHttpClientConnectionOperator.java:95)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ZapProtocolExec.execute(ZapProtocolExec.java:179)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ZapHttpRequestRetryExec.execute(ZapHttpRequestRetryExec.java:81)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ZapInternalHttpClient.doExecute(ZapInternalHttpClient.java:173)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:245)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:188)
+	at org.zaproxy.addon.network.internal.client.apachev5.HttpSenderApache.sendImpl0(HttpSenderApache.java:486)
+	at org.zaproxy.addon.network.internal.client.apachev5.HttpSenderApache.sendImpl(HttpSenderApache.java:365)
+	at org.zaproxy.addon.network.internal.client.apachev5.HttpSenderApache.sendImpl(HttpSenderApache.java:116)
+	at org.zaproxy.addon.network.internal.client.BaseHttpSender.sendRateLimited(BaseHttpSender.java:415)
+	at org.zaproxy.addon.network.internal.client.BaseHttpSender.sendAuthenticated(BaseHttpSender.java:383)
+	at org.zaproxy.addon.network.internal.client.BaseHttpSender.sendNoRedirections(BaseHttpSender.java:351)
+	at org.zaproxy.addon.network.internal.client.BaseHttpSender.send(BaseHttpSender.java:307)
+	at org.zaproxy.addon.network.internal.client.BaseHttpSender.sendAndReceive(BaseHttpSender.java:278)
+	at org.zaproxy.addon.network.internal.client.BaseHttpSender.sendAndReceive(BaseHttpSender.java:234)
+	at org.parosproxy.paros.network.HttpSender.sendImpl(HttpSender.java:536)
+	at org.parosproxy.paros.network.HttpSender.sendAndReceive(HttpSender.java:529)
+	at org.zaproxy.zap.extension.quickstart.ExtensionQuickStart.accessNode(ExtensionQuickStart.java:330)
+	at org.zaproxy.zap.extension.quickstart.AttackThread.run(AttackThread.java:86)
+2026-04-24 10:13:34,697 [ZAP-SpiderInitThread-0] INFO  SpiderThread - Starting spidering scan on http://juice-shop:3000 at 2026-04-24T10:13:34.696+0000
+2026-04-24 10:13:34,701 [ZAP-SpiderInitThread-0] INFO  Spider - Spider initializing...
+2026-04-24 10:13:34,717 [ZAP-SpiderInitThread-0] INFO  Spider - Starting spider...
+2026-04-24 10:13:52,930 [ZAP-SpiderThreadPool-0-thread-9] INFO  Spider - Spidering process is complete. Shutting down...
+2026-04-24 10:13:52,934 [ZAP-SpiderShutdownThread-0] INFO  SpiderThread - Spider scanning complete: true on http://juice-shop:3000 at 2026-04-24T10:13:52.934+0000
+2026-04-24 10:13:55,310 [ZAP-AjaxSpider] INFO  SpiderThread - Running Crawljax (with firefox): http://juice-shop:3000
+2026-04-24 10:13:55,893 [ZAP-AjaxSpider] INFO  Plugins - Loaded org.zaproxy.zap.extension.spiderAjax.SpiderThread$DummyPlugin@581238f7 as a OnBrowserCreatedPlugin
+2026-04-24 10:13:56,745 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 18 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:14:17,940 [ZAP-PassiveScan-4] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 10 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-24 10:14:18,724 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 10 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-24 10:14:27,064 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Vulnerable JS Library (Powered by Retire.js) took 5 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:14:39,683 [ZAP-PassiveScan-4] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 17 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-24 10:14:40,566 [ZAP-PassiveScan-3] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 18 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-24 10:14:42,778 [ZAP-PassiveScan-1] WARN  PassiveScanTask - Passive Scan rule Vulnerable JS Library (Powered by Retire.js) took 6 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:14:56,219 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 20 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-24 10:14:56,279 [ZAP-PassiveScan-7] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 20 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-24 10:14:56,285 [ZAP-PassiveScan-5] WARN  PassiveScanTask - Passive Scan rule Cross-Domain Misconfiguration took 5 seconds to scan http://juice-shop:3000/scripts.js application/javascript; charset=UTF-8 20700
+2026-04-24 10:14:56,426 [ZAP-PassiveScan-4] WARN  PassiveScanTask - Passive Scan rule Cross-Domain Misconfiguration took 5 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-24 10:15:03,816 [ZAP-PassiveScan-2] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 53 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:15:06,351 [ZAP-PassiveScan-3] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 9 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-24 10:15:06,469 [ZAP-PassiveScan-4] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 9 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-24 10:15:12,653 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 44 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:15:17,394 [ZAP-PassiveScan-1] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 33 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:15:21,169 [ZAP-AjaxSpider] INFO  CrawlController - Received shutdown notice. Reason is Exausted
+2026-04-24 10:15:24,197 [ZAP-AjaxSpider] INFO  CrawlController - Shutdown process complete
+2026-04-24 10:15:24,200 [ZAP-AjaxSpider] INFO  SpiderThread - Stopping proxy...
+2026-04-24 10:15:25,054 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 23 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-24 10:15:25,447 [ZAP-AjaxSpider] INFO  SpiderThread - Proxy stopped.
+2026-04-24 10:15:25,453 [ZAP-AjaxSpider] INFO  SpiderThread - Finished Crawljax: http://juice-shop:3000
+2026-04-24 10:15:25,725 [ZAP-QuickStart-AttackThread] INFO  AttackThread - Attacking http://juice-shop:3000
+2026-04-24 10:15:25,804 [ZAP-QuickStart-AttackThread] INFO  Scanner - scanner with ID 0 started
+2026-04-24 10:15:28,088 [ZAP-Scanner-0] INFO  HostProcess - Scanning 161 node(s) from http://juice-shop:3000
+2026-04-24 10:15:28,090 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | PathTraversalScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:31,308 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | PathTraversalScanRule in 3.219s with 255 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:31,310 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | RemoteFileIncludeScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:33,211 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | RemoteFileIncludeScanRule in 1.901s with 170 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:33,212 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SourceCodeDisclosureWebInfScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:33,214 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ShellShockScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:35,985 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SourceCodeDisclosureWebInfScanRule in 2.773s with 58 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:36,632 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ShellShockScanRule in 3.418s with 34 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:36,633 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | HeartBleedActiveScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:36,638 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SourceCodeDisclosureCve20121823ScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:36,658 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | HeartBleedActiveScanRule in 0.025s with 3 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:43,248 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SourceCodeDisclosureCve20121823ScanRule in 6.611s with 26 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:43,249 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | RemoteCodeExecutionCve20121823ScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:49,647 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | RemoteCodeExecutionCve20121823ScanRule in 6.398s with 322 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:49,649 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ExternalRedirectScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:52,301 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ExternalRedirectScanRule in 2.652s with 153 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:52,302 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ServerSideIncludeScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:53,333 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ServerSideIncludeScanRule in 1.031s with 68 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:53,334 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | CrossSiteScriptingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:53,616 [ZAP-ActiveScanner-3] INFO  ZapHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://juice-shop:3000
+2026-04-24 10:15:54,249 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | CrossSiteScriptingScanRule in 0.915s with 85 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:54,250 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | PersistentXssPrimeScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:15:54,906 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | PersistentXssPrimeScanRule in 0.656s with 17 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:15:54,907 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | PersistentXssSpiderScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:01,569 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | PersistentXssSpiderScanRule in 6.662s with 161 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:16:01,570 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | PersistentXssScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:02,207 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | PersistentXssScanRule in 0.637s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:16:02,208 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SqlInjectionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:04,153 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SqlInjectionScanRule in 1.946s with 378 message(s) sent and 1 alert(s) raised.
+2026-04-24 10:16:04,156 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SqlInjectionMySqlTimingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:05,368 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SqlInjectionMySqlTimingScanRule in 1.212s with 170 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:16:05,369 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SqlInjectionHypersonicTimingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:06,687 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SqlInjectionHypersonicTimingScanRule in 1.318s with 170 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:16:06,688 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SqlInjectionOracleTimingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:07,609 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SqlInjectionOracleTimingScanRule in 0.921s with 85 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:16:07,609 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SqlInjectionPostgreSqlTimingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:08,564 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SqlInjectionPostgreSqlTimingScanRule in 0.955s with 85 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:16:08,565 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | DomXssScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:16:29,383 [Thread-2688] INFO  DomXssScanRule - Reaper thread starting
+2026-04-24 10:25:35,557 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | DomXssScanRule in 566.988s with 4657 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:25:37,219 [ZAP-DomXssReaper] INFO  DomXssScanRule - Reaper thread exiting 0
+2026-04-24 10:25:49,007 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SqlInjectionMsSqlTimingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:25:51,276 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SqlInjectionMsSqlTimingScanRule in 2.272s with 170 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:25:51,279 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | Log4ShellScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:25:51,293 [ZAP-Scanner-0] INFO  HostProcess - skipped plugin [no Active Scan OAST service is selected] http://juice-shop:3000 | Log4ShellScanRule in 0.016s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:25:51,295 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | Spring4ShellScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:25:51,374 [ZAP-ActiveScanner-4] INFO  ZapHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://juice-shop:3000
+2026-04-24 10:25:51,375 [ZAP-ActiveScanner-5] INFO  ZapHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://juice-shop:3000
+2026-04-24 10:25:51,662 [ZAP-ActiveScanner-0] INFO  ZapHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://juice-shop:3000
+2026-04-24 10:25:51,713 [ZAP-Scanner-0] INFO  ZapHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://juice-shop:3000
+2026-04-24 10:26:03,946 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | Spring4ShellScanRule in 12.652s with 330 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:03,949 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | React2ShellScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:03,960 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | CodeInjectionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:03,967 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | React2ShellScanRule in 0.02s with 1 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:06,612 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | CodeInjectionScanRule in 2.654s with 136 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:06,613 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | CommandInjectionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:08,477 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | CommandInjectionScanRule in 1.865s with 323 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:08,479 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | XpathInjectionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:09,320 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | XpathInjectionScanRule in 0.841s with 51 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:09,321 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | XxeScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:10,356 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | XxeScanRule in 1.035s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:10,357 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | PaddingOracleScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:11,655 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | PaddingOracleScanRule in 1.298s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:11,656 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | CloudMetadataScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:11,658 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SstiScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:11,925 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | CloudMetadataScanRule in 0.27s with 13 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:14,174 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SstiScanRule in 2.517s with 238 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:14,177 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SstiBlindScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:15,907 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SstiBlindScanRule in 1.731s with 204 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:15,910 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | CommandInjectionTimingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:17,874 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | CommandInjectionTimingScanRule in 1.966s with 272 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:17,876 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | DirectoryBrowsingScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:24,876 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | DirectoryBrowsingScanRule in 7.001s with 161 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:24,880 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | HttpOnlySiteScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:24,883 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | BufferOverflowScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:24,955 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | HttpOnlySiteScanRule in 0.075s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:26,097 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | BufferOverflowScanRule in 1.216s with 17 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:26,102 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | FormatStringScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:26,922 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | FormatStringScanRule in 0.824s with 51 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:26,923 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | CrlfInjectionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:28,411 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | CrlfInjectionScanRule in 1.489s with 119 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:28,413 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ParameterTamperScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:29,558 [ZAP-ActiveScanner-1] INFO  ZapHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://juice-shop:3000
+2026-04-24 10:26:29,669 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ParameterTamperScanRule in 1.256s with 47 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:29,670 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ElmahScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:29,674 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | TraceAxdScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:30,184 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ElmahScanRule in 0.514s with 1 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:32,332 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | TraceAxdScanRule in 2.658s with 40 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:32,333 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | HtAccessScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:33,939 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | HtAccessScanRule in 1.607s with 36 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:33,940 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | EnvFileScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:35,716 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | EnvFileScanRule in 1.776s with 36 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:35,718 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | HiddenFilesScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:35,748 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SpringActuatorScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:35,750 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ExponentialEntityExpansionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:35,771 [ZAP-ActiveScanner-1] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SpringActuatorScanRule in 0.023s with 2 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:35,920 [ZAP-ActiveScanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | HiddenFilesScanRule in 0.203s with 52 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:36,906 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ExponentialEntityExpansionScanRule in 1.155s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:36,910 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | XsltInjectionScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:38,589 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | XsltInjectionScanRule in 1.678s with 64 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:38,590 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | HttpsAsHttpScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:39,240 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | HttpsAsHttpScanRule in 0.65s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:39,241 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | GetForPostScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:26:40,829 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | GetForPostScanRule in 1.588s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:26:40,830 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | UserAgentScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:28:02,259 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | UserAgentScanRule in 81.428s with 1932 message(s) sent and 132 alert(s) raised.
+2026-04-24 10:28:02,261 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ScriptsActiveScanner strength MEDIUM threshold MEDIUM
+2026-04-24 10:28:05,819 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ScriptsActiveScanner in 3.558s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:28:05,820 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SOAPActionSpoofingActiveScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:28:07,507 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SOAPActionSpoofingActiveScanRule in 1.687s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:28:07,508 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | SOAPXMLInjectionActiveScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:28:08,410 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | SOAPXMLInjectionActiveScanRule in 0.902s with 0 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:28:08,411 [ZAP-Scanner-0] INFO  HostProcess - start host http://juice-shop:3000 | ActiveScriptScanRule strength MEDIUM threshold MEDIUM
+2026-04-24 10:28:20,642 [ZAP-Scanner-0] INFO  HostProcess - completed host/plugin http://juice-shop:3000 | ActiveScriptScanRule in 12.231s with 17 message(s) sent and 0 alert(s) raised.
+2026-04-24 10:28:20,645 [ZAP-Scanner-0] INFO  HostProcess - completed host http://juice-shop:3000 in 774.815s with 133 alert(s) raised.
+2026-04-24 10:28:20,648 [Thread-56] INFO  Scanner - scanner with ID 0 completed in 774.844s
+2026-04-26 12:38:47,004 [Webswing-Launch-Main] INFO  GuiBootstrap - ZAP 2.17.0 started 26/04/2026, 12:38:46 with home: /home/zap/.ZAP/ cores: 8 maxMemory: 1 GB
+2026-04-26 12:38:47,184 [AWT-EventQueue-0] INFO  AbstractParam - Setting config stats.pkg.webswing = 1 was 1
+2026-04-26 12:38:48,369 [AWT-EventQueue-0] INFO  View - Initialising View
+2026-04-26 12:38:54,305 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, version=26.0.0], [id=ascanrules, version=81.0.0], [id=authhelper, version=0.38.0], [id=automation, version=0.59.0], [id=bruteforce, version=20.0.0], [id=callhome, version=0.21.0], [id=client, version=0.22.0], [id=commonlib, version=1.41.0], [id=database, version=0.9.0], [id=diff, version=18.0.0], [id=directorylistv1, version=9.0.0], [id=domxss, version=24.0.0], [id=encoder, version=1.9.0], [id=exim, version=0.19.0], [id=formhandler, version=6.8.0], [id=fuzz, version=13.16.0], [id=gettingStarted, version=20.0.0], [id=graaljs, version=0.14.0], [id=graphql, version=0.33.0], [id=help, version=22.0.0], [id=hud, version=0.19.0], [id=insights, version=0.3.0], [id=invoke, version=17.0.0], [id=network, version=0.26.0], [id=oast, version=0.24.0], [id=onlineMenu, version=15.0.0], [id=openapi, version=55.0.0], [id=postman, version=0.9.0], [id=pscan, version=0.6.0], [id=pscanrules, version=73.0.0], [id=quickstart, version=55.0.0], [id=replacer, version=22.0.0], [id=reports, version=0.44.0], [id=requester, version=7.10.0], [id=retest, version=0.11.0], [id=retire, version=0.56.0], [id=reveal, version=10.0.0], [id=scanpolicies, version=0.8.0], [id=scripts, version=45.18.0], [id=selenium, version=15.47.0], [id=sequence, version=9.0.0], [id=soap, version=30.0.0], [id=spider, version=0.20.0], [id=spiderAjax, version=23.30.0], [id=tips, version=16.0.0], [id=webdriverlinux, version=192.0.0], [id=websocket, version=36.0.0], [id=zest, version=48.13.0]]
+2026-04-26 12:38:54,311 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Loading extensions
+2026-04-26 12:38:55,659 [ZAP-BootstrapGUI] INFO  TlsUtils - Using supported SSL/TLS protocols: [TLSv1.2, TLSv1.3]
+2026-04-26 12:38:56,434 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Extensions loaded
+2026-04-26 12:38:57,830 [ZAP-BootstrapGUI] INFO  FlywayExecutor - Database: jdbc:hsqldb:file:/home/zap/.ZAP/session/untitled1 (HSQL Database Engine 2.7)
+2026-04-26 12:38:57,949 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."CLIENT_FLYWAY_SCHEMA_HISTORY" does not exist yet
+2026-04-26 12:38:57,962 [ZAP-BootstrapGUI] INFO  DbValidate - Successfully validated 1 migration (execution time 00:00.039s)
+2026-04-26 12:38:57,992 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."CLIENT_FLYWAY_SCHEMA_HISTORY" with baseline ...
+2026-04-26 12:38:58,058 [ZAP-BootstrapGUI] INFO  DbBaseline - Successfully baselined schema with version: 0
+2026-04-26 12:38:58,085 [ZAP-BootstrapGUI] INFO  DbMigrate - Current version of schema "PUBLIC": 0
+2026-04-26 12:38:58,101 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create history table"
+2026-04-26 12:38:58,133 [ZAP-BootstrapGUI] INFO  DbMigrate - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.009s)
+2026-04-26 12:38:59,436 [ZAP-BootstrapGUI] INFO  FlywayExecutor - Database: jdbc:hsqldb:file:/home/zap/.ZAP/session/untitled1 (HSQL Database Engine 2.7)
+2026-04-26 12:38:59,462 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" does not exist yet
+2026-04-26 12:38:59,465 [ZAP-BootstrapGUI] INFO  DbValidate - Successfully validated 6 migrations (execution time 00:00.007s)
+2026-04-26 12:38:59,475 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" with baseline ...
+2026-04-26 12:38:59,492 [ZAP-BootstrapGUI] INFO  DbBaseline - Successfully baselined schema with version: 0
+2026-04-26 12:38:59,505 [ZAP-BootstrapGUI] INFO  DbMigrate - Current version of schema "PUBLIC": 0
+2026-04-26 12:38:59,532 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create tables"
+2026-04-26 12:38:59,568 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "2 - Create storage tables"
+2026-04-26 12:38:59,590 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "3 - Improve diags"
+2026-04-26 12:38:59,618 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "4 - Web element selector"
+2026-04-26 12:38:59,633 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "5 - Af plan"
+2026-04-26 12:38:59,652 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "6 - Auth report data"
+2026-04-26 12:38:59,670 [ZAP-BootstrapGUI] INFO  DbMigrate - Successfully applied 6 migrations to schema "PUBLIC", now at version v6 (execution time 00:00.044s)
+2026-04-26 12:39:00,872 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Auto-update Extension - Allows ZAP to check for updates
+2026-04-26 12:39:01,061 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Options Extension - Options Extension
+2026-04-26 12:39:01,725 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Edit Menu Extension - Edit Menu Extension
+2026-04-26 12:39:01,736 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing API Extension - Provides a rest based API for controlling and accessing ZAP
+2026-04-26 12:39:01,832 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing History Extension - History Extension
+2026-04-26 12:39:02,169 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionReveal - Show hidden fields and enable disabled fields
+2026-04-26 12:39:02,182 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Search Extension - Search messages for strings and regular expressions
+2026-04-26 12:39:02,338 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Breakpoint Extension - Allows you to intercept and modify requests and responses
+2026-04-26 12:39:02,637 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scan Extension - Passive scanner
+2026-04-26 12:39:02,641 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alerts Extension - Allows you to view and manage alerts
+2026-04-26 12:39:03,104 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Active Scan Extension - Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2026-04-26 12:39:03,331 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionSequence - ExtensionSequence
+2026-04-26 12:39:03,353 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Standard Menus Extension - A set of common popup menus for miscellaneous tasks
+2026-04-26 12:39:03,404 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionBruteForce - Forced browsing of files and directories using code from the OWASP DirBuster tool
+2026-04-26 12:39:03,552 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Compare Extension - Compares 2 sessions and generates an HTML file showing the differences
+2026-04-26 12:39:03,559 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionInvoke - Invoke external applications passing context related information such as URLs and parameters
+2026-04-26 12:39:03,607 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Anti-CSRF Extension - Handles anti cross site request forgery (CSRF) tokens
+2026-04-26 12:39:03,656 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Extension - Authentication Extension
+2026-04-26 12:39:03,690 [ZAP-BootstrapGUI] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+2026-04-26 12:39:03,698 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Users Extension - Users Extension
+2026-04-26 12:39:03,702 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Parameters Extension - Summarise and analyse FORM and URL parameters as well as cookies
+2026-04-26 12:39:03,739 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Script Extension - Script integration
+2026-04-26 12:39:03,878 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionScripts - Scripting console, supports all JSR 223 scripting languages
+2026-04-26 12:39:04,372 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Forced User Extension - Forced User Extension
+2026-04-26 12:39:04,385 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Sessions Extension - Extension handling HTTP sessions
+2026-04-26 12:39:04,434 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionZest - Zest is a specialized scripting language, originally, from Mozilla specifically designed to be used in security tools
+2026-04-26 12:39:05,241 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionDiff - ExtensionDiff
+2026-04-26 12:39:05,247 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Post Table View Extension - HTTP Panel Post Table View Extension
+2026-04-26 12:39:05,266 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Encoder Addon - Adds support for scriptable encoders to ZAP.
+2026-04-26 12:39:05,518 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Session Management Extension - Session Management Extension
+2026-04-26 12:39:05,551 [ZAP-BootstrapGUI] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+2026-04-26 12:39:05,561 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Form Table View Extension - HTTP Panel Form Table View Extension
+2026-04-26 12:39:05,627 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSockets Support - Capture messages from WebSockets with the ability to set breakpoints.
+2026-04-26 12:39:05,768 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP/WSDL Support - Allows you to import a WSDL file containing operations which ZAP will access, adding them to the Sites tree.
+2026-04-26 12:39:05,775 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Core UI Extension - Core UI related functionality.
+2026-04-26 12:39:05,784 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authorization Extension - Authorization Extension
+2026-04-26 12:39:05,792 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Requester - Allows to manually edit and send messages.
+2026-04-26 12:39:06,005 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing AJAX Spider - AJAX Spider, uses Crawljax
+2026-04-26 12:39:06,122 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebDriver Provider - Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2026-04-26 12:39:06,208 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionClientIntegration - Client Side Integration
+2026-04-26 12:39:06,355 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Refresh Sites Tree Extension - Adds menu item to refresh the Sites tree
+2026-04-26 12:39:06,361 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Help Extension - ZAP User Guide
+2026-04-26 12:39:06,597 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Call Home - Handles all of the calls to ZAP services
+2026-04-26 12:39:06,605 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Network Extension - Provides core networking capabilities.
+2026-04-26 12:39:08,456 [ZAP-BootstrapGUI] INFO  ConnectionOptions - Unsafe SSL/TLS renegotiation disabled.
+2026-04-26 12:39:08,459 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Extension Configuration Extension - Allows you to configure which extensions are loaded when ZAP starts
+2026-04-26 12:39:08,548 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Combined HTTP Panels Extension - Combined HTTP Panels Extension
+2026-04-26 12:39:08,595 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Hex View Extension - HTTP Panel Hex View Extension
+2026-04-26 12:39:08,641 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Image View Extension - HTTP Panel Image View Extension
+2026-04-26 12:39:08,654 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Query Table View Extension - HTTP Panel Query Table View Extension
+2026-04-26 12:39:08,675 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Syntax Highlighter View Extension - HTTP Panel Syntax Highlighter View Extension
+2026-04-26 12:39:08,803 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Keyboard Configuration Extension - Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2026-04-26 12:39:08,833 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Scanner Rule Configuration Extension - Active and passive rule configuration
+2026-04-26 12:39:08,856 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Statistics Extension - Statistics
+2026-04-26 12:39:08,876 [ZAP-BootstrapGUI] INFO  ExtensionStats - Start recording in memory stats
+2026-04-26 12:39:08,878 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Custom Pages Extension - Custom Pages Definition
+2026-04-26 12:39:08,891 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Sequence Automation - Sequence Automation Framework Integration
+2026-04-26 12:39:08,903 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scan Rules - Release status passive scan rules.
+2026-04-26 12:39:08,906 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Spider Automation - Client Spider Automation Framework Integration
+2026-04-26 12:39:08,916 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Map Import/Export - Client Map export support for Import/Export.
+2026-04-26 12:39:08,921 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Zest Script Recording Support - Allows recording client events as Zest scripts.
+2026-04-26 12:39:08,930 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionDomXSS - DOM XSS Active Scan Rule
+2026-04-26 12:39:09,030 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionTipsAndTricks - Tips and Tricks
+2026-04-26 12:39:09,035 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Match and Replace - Easy way to replace strings in requests and responses
+2026-04-26 12:39:09,064 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Replacer Automation - Replacer Automation Framework Integration
+2026-04-26 12:39:09,069 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Scripts Automation Framework Integration - Scripts Automation
+2026-04-26 12:39:09,084 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Spider Extension - Spider used for automatically finding URIs on a site.
+2026-04-26 12:39:09,251 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Spider Automation - Spider Automation Integration
+2026-04-26 12:39:09,261 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP Automation - SOAP Automation Framework Integration
+2026-04-26 12:39:09,265 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP Spider - SOAP Spider Integration
+2026-04-26 12:39:09,270 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Retest - Facilitates the verification of presence/absence of certain alerts.
+2026-04-26 12:39:09,275 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Import - Allows you to spider and import OpenAPI (Swagger) definitions 
+2026-04-26 12:39:09,299 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Automation - OpenAPI Automation Framework Integration
+2026-04-26 12:39:09,304 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Scripts - Adds scripts relevant to OpenAPI specifications.
+2026-04-26 12:39:09,307 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Spider - OpenAPI Spider Integration
+2026-04-26 12:39:09,312 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Helper - Authentication Helper
+2026-04-26 12:39:09,878 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated Client Spider scan.
+2026-04-26 12:39:09,881 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Helper Reports - Authentication Helper Reports
+2026-04-26 12:39:09,884 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing AJAX Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated AJAX Spider scan.
+2026-04-26 12:39:09,886 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionGettingStarted - The ZAP Getting Started Guide
+2026-04-26 12:39:09,894 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Out-of-band Application Security Testing - Adds Out-of-band Application Security Testing functionality.
+2026-04-26 12:39:09,959 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OAST Scripts - Adds OAST scripts.
+2026-04-26 12:39:09,968 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Ajax Spider Automation - Ajax Spider Automation Framework Integration
+2026-04-26 12:39:09,977 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Database Extension - Provides databases and persistence capabilities.
+2026-04-26 12:39:09,979 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Automation Framework - Provides functionality to simplify using ZAP in an automated manner
+2026-04-26 12:39:10,057 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Zest Import/Export - Zest script export and import support for Import/Export.
+2026-04-26 12:39:10,063 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start panel  - Adds the Quick Start panel for scanning and exploring applications
+2026-04-26 12:39:10,213 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Ajax Spider integration - Add the option to use the Ajax Spider in the Quick Start scan
+2026-04-26 12:39:10,235 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start HUD Integration - HUD integration for the quick start panel
+2026-04-26 12:39:10,238 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Browser Launcher - Launch browsers preset proxying through ZAP
+2026-04-26 12:39:10,321 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Spider Integration - Adds the option to use the traditional Spider in the Quick Start scan.
+2026-04-26 12:39:10,328 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionAlertFilters - Context alert rules filter
+2026-04-26 12:39:10,356 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2026-04-26 12:39:10,360 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scanner Extension - Provides core passive scanning capabilities.
+2026-04-26 12:39:10,453 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scanner Automation Framework Extension - Provides jobs and result data related to the passive scanner.
+2026-04-26 12:39:10,456 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionHUD - Heads Up Display
+2026-04-26 12:39:11,573 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionHUDlaunch - ExtensionHUDlaunch
+2026-04-26 12:39:11,575 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionOnlineMenu - The Online menu links
+2026-04-26 12:39:11,579 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Report Generator - Templated and themed report generation functionality
+2026-04-26 12:39:11,593 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Report Generation Automation Integration - Report Generation Automation Integration
+2026-04-26 12:39:11,603 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSocket Fuzzer - Allows to fuzz WebSocket messages.
+2026-04-26 12:39:11,608 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSocket Message Editor - Provides the WebSocket Message Editor dialogues.
+2026-04-26 12:39:11,742 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Retire.js - Retire.js
+2026-04-26 12:39:11,747 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Vulnerable JS Library (Powered by Retire.js)
+2026-04-26 12:39:11,749 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Advance Fuzzer - Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2026-04-26 12:39:11,763 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Fuzzer - Allows to fuzz HTTP messages.
+2026-04-26 12:39:11,811 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionGraphQl - Allows you to inspect and attack GraphQL endpoints.
+2026-04-26 12:39:11,837 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraphQL Automation - GraphQL Automation Framework Integration
+2026-04-26 12:39:11,840 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraphQL Spider - GraphQL Spider Integration
+2026-04-26 12:39:11,842 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionInsights - Insights Extension
+2026-04-26 12:39:11,875 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2026-04-26 12:39:11,880 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Insights Reports Extension - Adds Insights to the report data
+2026-04-26 12:39:11,882 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Import/Export - Import and Export functionality supporting multiple formats.
+2026-04-26 12:39:11,916 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Import/Export Automation - Import/Export Automation Framework Integration
+2026-04-26 12:39:11,921 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Common Library - A library of shared functionality
+2026-04-26 12:39:11,941 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Postman Import - Allows you to spider and import Postman collections
+2026-04-26 12:39:11,946 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Postman Automation - Postman Automation Framework Integration
+2026-04-26 12:39:11,949 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionFormHandler - This extension allows a user to change the default values used for generated content (e.g. spiders, importers).
+2026-04-26 12:39:11,979 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraalVM JavaScript Engine Extension - Provides the GraalVM JavaScript engine for ZAP scripting.
+2026-04-26 12:39:13,054 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Active Scan Rules - Release status active scan rules
+2026-04-26 12:39:14,222 [ZAP-BootstrapGUI] ERROR ExtensionClientIntegration - Failed to get or create Firefox profile zap-client-profile
+2026-04-26 12:39:14,226 [ZAP-BootstrapGUI] INFO  ExtensionKeyboard - Initializing keyboard shortcuts
+2026-04-26 12:39:21,760 [ZAP-BootstrapGUI] INFO  CallbackService - Started callback service on 0.0.0.0:34785
+2026-04-26 12:39:21,883 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Anti-clickjacking Header
+2026-04-26 12:39:21,885 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Application Error Disclosure
+2026-04-26 12:39:21,887 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Big Redirect Detected (Potential Sensitive Information Leak)
+2026-04-26 12:39:21,888 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Re-examine Cache-control Directives
+2026-04-26 12:39:21,889 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Charset Mismatch
+2026-04-26 12:39:21,891 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Content Security Policy (CSP) Header Not Set
+2026-04-26 12:39:21,893 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: CSP
+2026-04-26 12:39:21,894 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Content-Type Header Missing
+2026-04-26 12:39:21,897 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie No HttpOnly Flag
+2026-04-26 12:39:21,902 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Loosely Scoped Cookie
+2026-04-26 12:39:21,904 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie without SameSite Attribute
+2026-04-26 12:39:21,906 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie Without Secure Flag
+2026-04-26 12:39:21,917 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cross-Domain Misconfiguration
+2026-04-26 12:39:21,918 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2026-04-26 12:39:21,919 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Absence of Anti-CSRF Tokens
+2026-04-26 12:39:21,920 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Directory Browsing
+2026-04-26 12:39:21,922 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Hash Disclosure
+2026-04-26 12:39:21,923 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Heartbleed OpenSSL Vulnerability (Indicative)
+2026-04-26 12:39:21,927 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: In Page Banner Information Leak
+2026-04-26 12:39:21,928 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Private IP Disclosure
+2026-04-26 12:39:21,929 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Session ID in URL Rewrite
+2026-04-26 12:39:21,931 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Debug Error Messages
+2026-04-26 12:39:21,935 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in URL
+2026-04-26 12:39:21,937 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2026-04-26 12:39:21,938 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Suspicious Comments
+2026-04-26 12:39:21,940 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Weak Authentication Method
+2026-04-26 12:39:21,945 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTP to HTTPS Insecure Transition in Form Post
+2026-04-26 12:39:21,947 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTPS to HTTP Insecure Transition in Form Post
+2026-04-26 12:39:21,949 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Insecure JSF ViewState
+2026-04-26 12:39:21,953 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Java Serialization Object
+2026-04-26 12:39:21,955 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Reverse Tabnabbing
+2026-04-26 12:39:21,957 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Secure Pages Include Mixed Content
+2026-04-26 12:39:21,958 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Modern Web Application
+2026-04-26 12:39:21,962 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: PII Disclosure
+2026-04-26 12:39:21,964 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Script Served From Malicious Domain (polyfill)
+2026-04-26 12:39:21,966 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Retrieved from Cache
+2026-04-26 12:39:21,971 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTP Server Response Header
+2026-04-26 12:39:21,972 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Strict-Transport-Security Header
+2026-04-26 12:39:21,975 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Sub Resource Integrity Attribute Missing
+2026-04-26 12:39:21,979 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Timestamp Disclosure
+2026-04-26 12:39:21,980 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable Charset
+2026-04-26 12:39:21,982 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie Poisoning
+2026-04-26 12:39:21,984 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable HTML Element Attribute (Potential XSS)
+2026-04-26 12:39:21,988 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable JavaScript Event (XSS)
+2026-04-26 12:39:21,990 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Off-site Redirect
+2026-04-26 12:39:21,992 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Username Hash Found
+2026-04-26 12:39:21,996 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Viewstate
+2026-04-26 12:39:22,000 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-AspNet-Version Response Header
+2026-04-26 12:39:22,003 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Backend-Server Header Information Leak
+2026-04-26 12:39:22,005 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-ChromeLogger-Data (XCOLD) Header Information Leak
+2026-04-26 12:39:22,007 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Content-Type-Options Header Missing
+2026-04-26 12:39:22,012 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Debug-Token Information Leak
+2026-04-26 12:39:22,015 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s)
+2026-04-26 12:39:22,017 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: ZAP is Out of Date
+2026-04-26 12:39:22,024 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Script Passive Scan Rules
+2026-04-26 12:39:22,031 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: WSDL File Detection
+2026-04-26 12:39:22,041 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Authentication Request Identified
+2026-04-26 12:39:22,043 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Session Management Response Identified
+2026-04-26 12:39:22,045 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Verification Request Identified
+2026-04-26 12:39:22,048 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Stats Passive Scan Rule
+2026-04-26 12:39:22,142 [AWT-EventQueue-0] INFO  Control - New Session
+2026-04-26 12:39:22,152 [AWT-EventQueue-0] INFO  Control - Create and Open Untitled Db
+2026-04-26 12:39:26,129 [ZAP-cfu] INFO  ExtensionAutoUpdate - There is/are 2 newer addons
+2026-04-26 12:49:57,081 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 12:49:57,109 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 12:49:57,235 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,243 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,249 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,262 [ZAP-IO-Server-1-2] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,270 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,281 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,285 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,289 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,294 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,298 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,493 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 12:49:57,520 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 12:49:57,546 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 12:49:57,677 [ZAP-IO-Server-1-2] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,680 [ZAP-IO-Server-1-2] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,691 [ZAP-IO-Server-1-2] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,695 [ZAP-IO-Server-1-2] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,715 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,725 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,735 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,742 [ZAP-IO-Server-1-4] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,752 [ZAP-IO-Server-1-4] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:49:57,771 [ZAP-IO-Server-1-3] WARN  API - Request to API URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11& from 172.18.0.3 not permitted
+2026-04-26 12:50:04,109 [ZAP-BrowserLauncher] WARN  ExtensionQuickStartLaunch - Failed to access the URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11&, cause: Reached error page: about:neterror?e=netReset&u=http%3A//zap/OTHER/quickstartlaunch/other/startPage/%3Fapinonce%3Dd55933f877936e11%26&c=UTF-8&d=The%20connection%20to%20the%20server%20was%20reset%20while%20the%20page%20was%20loading.
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.2-microsoft-standard-WSL2', java.version: '17.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9ed4d4b3-c9a1-4f50-927d-316199c72fdd, get {url=http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=d55933f877936e11&}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.9.1, moz:accessibilityChecks: false, moz:buildID: 20260403140708, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 26269, moz:profile: /tmp/rust_mozprofilerMHwVy, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86..., webSocketUrl: ws://127.0.0.1:37049/sessio...}
+Session ID: 9ed4d4b3-c9a1-4f50-927d-316199c72fdd
+2026-04-26 12:50:06,665 [ZAP-BrowserLauncher] WARN  ExtensionQuickStartLaunch - Failed to access the URL http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07&, cause: Reached error page: about:neterror?e=netReset&u=http%3A//zap/OTHER/quickstartlaunch/other/startPage/%3Fapinonce%3D9cd823f26827fa07%26&c=UTF-8&d=The%20connection%20to%20the%20server%20was%20reset%20while%20the%20page%20was%20loading.
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.2-microsoft-standard-WSL2', java.version: '17.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e6a55c6e-237d-4ea7-91ad-bd6e4334b605, get {url=http://zap/OTHER/quickstartlaunch/other/startPage/?apinonce=9cd823f26827fa07&}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 140.9.1, moz:accessibilityChecks: false, moz:buildID: 20260403140708, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 26330, moz:profile: /tmp/rust_mozprofilezNKGuw, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86..., webSocketUrl: ws://127.0.0.1:34151/sessio...}
+Session ID: e6a55c6e-237d-4ea7-91ad-bd6e4334b605
+2026-04-26 13:07:01,655 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:01,684 [ZAP-IO-Server-1-6] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:01,710 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:13,048 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 9 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-26 13:07:13,104 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 8 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-26 13:07:22,252 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:22,309 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:22,357 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:22,416 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:22,645 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:22,686 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:07:25,273 [ZAP-PassiveScan-5] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 17 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:07:31,086 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Vulnerable JS Library (Powered by Retire.js) took 6 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:07:37,279 [ZAP-PassiveScan-7] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 11 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-26 13:07:37,500 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 12 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-26 13:07:47,052 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 14 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:08:50,099 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,117 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,132 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,145 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,156 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,170 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,185 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,199 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,213 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,231 [ZAP-IO-Server-1-14] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:50,339 [ZAP-IO-Server-1-6] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:08:58,576 [ZAP-PassiveScan-7] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 6 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-26 13:08:59,226 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 6 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-26 13:09:06,369 [ZAP-PassiveScan-4] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 11 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:09:53,856 [Webswing-Launch-Main] INFO  GuiBootstrap - ZAP 2.17.0 started 26/04/2026, 13:09:53 with home: /home/zap/.ZAP/ cores: 8 maxMemory: 1 GB
+2026-04-26 13:09:54,049 [AWT-EventQueue-0] INFO  AbstractParam - Setting config stats.pkg.webswing = 1 was 1
+2026-04-26 13:09:55,359 [AWT-EventQueue-0] INFO  View - Initialising View
+2026-04-26 13:10:12,449 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Installed add-ons: [[id=alertFilters, version=26.0.0], [id=ascanrules, version=81.0.0], [id=authhelper, version=0.38.0], [id=automation, version=0.59.0], [id=bruteforce, version=20.0.0], [id=callhome, version=0.21.0], [id=client, version=0.22.0], [id=commonlib, version=1.41.0], [id=database, version=0.9.0], [id=diff, version=18.0.0], [id=directorylistv1, version=9.0.0], [id=domxss, version=24.0.0], [id=encoder, version=1.9.0], [id=exim, version=0.19.0], [id=formhandler, version=6.8.0], [id=fuzz, version=13.16.0], [id=gettingStarted, version=20.0.0], [id=graaljs, version=0.14.0], [id=graphql, version=0.33.0], [id=help, version=22.0.0], [id=hud, version=0.19.0], [id=insights, version=0.3.0], [id=invoke, version=17.0.0], [id=network, version=0.26.0], [id=oast, version=0.24.0], [id=onlineMenu, version=15.0.0], [id=openapi, version=55.0.0], [id=postman, version=0.9.0], [id=pscan, version=0.6.0], [id=pscanrules, version=73.0.0], [id=quickstart, version=55.0.0], [id=replacer, version=22.0.0], [id=reports, version=0.44.0], [id=requester, version=7.10.0], [id=retest, version=0.11.0], [id=retire, version=0.56.0], [id=reveal, version=10.0.0], [id=scanpolicies, version=0.8.0], [id=scripts, version=45.18.0], [id=selenium, version=15.47.0], [id=sequence, version=9.0.0], [id=soap, version=30.0.0], [id=spider, version=0.20.0], [id=spiderAjax, version=23.30.0], [id=tips, version=16.0.0], [id=webdriverlinux, version=192.0.0], [id=websocket, version=36.0.0], [id=zest, version=48.13.0]]
+2026-04-26 13:10:12,455 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Loading extensions
+2026-04-26 13:10:14,452 [ZAP-BootstrapGUI] INFO  TlsUtils - Using supported SSL/TLS protocols: [TLSv1.2, TLSv1.3]
+2026-04-26 13:10:15,135 [ZAP-BootstrapGUI] INFO  ExtensionFactory - Extensions loaded
+2026-04-26 13:10:16,599 [ZAP-BootstrapGUI] INFO  FlywayExecutor - Database: jdbc:hsqldb:file:/home/zap/.ZAP/session/untitled1 (HSQL Database Engine 2.7)
+2026-04-26 13:10:16,752 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."CLIENT_FLYWAY_SCHEMA_HISTORY" does not exist yet
+2026-04-26 13:10:16,762 [ZAP-BootstrapGUI] INFO  DbValidate - Successfully validated 1 migration (execution time 00:00.056s)
+2026-04-26 13:10:16,808 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."CLIENT_FLYWAY_SCHEMA_HISTORY" with baseline ...
+2026-04-26 13:10:16,920 [ZAP-BootstrapGUI] INFO  DbBaseline - Successfully baselined schema with version: 0
+2026-04-26 13:10:16,950 [ZAP-BootstrapGUI] INFO  DbMigrate - Current version of schema "PUBLIC": 0
+2026-04-26 13:10:16,969 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create history table"
+2026-04-26 13:10:17,002 [ZAP-BootstrapGUI] INFO  DbMigrate - Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.009s)
+2026-04-26 13:10:18,554 [ZAP-BootstrapGUI] INFO  FlywayExecutor - Database: jdbc:hsqldb:file:/home/zap/.ZAP/session/untitled1 (HSQL Database Engine 2.7)
+2026-04-26 13:10:18,579 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Schema history table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" does not exist yet
+2026-04-26 13:10:18,581 [ZAP-BootstrapGUI] INFO  DbValidate - Successfully validated 6 migrations (execution time 00:00.006s)
+2026-04-26 13:10:18,591 [ZAP-BootstrapGUI] INFO  JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" with baseline ...
+2026-04-26 13:10:18,605 [ZAP-BootstrapGUI] INFO  DbBaseline - Successfully baselined schema with version: 0
+2026-04-26 13:10:18,616 [ZAP-BootstrapGUI] INFO  DbMigrate - Current version of schema "PUBLIC": 0
+2026-04-26 13:10:18,633 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "1 - Create tables"
+2026-04-26 13:10:18,664 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "2 - Create storage tables"
+2026-04-26 13:10:18,682 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "3 - Improve diags"
+2026-04-26 13:10:18,702 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "4 - Web element selector"
+2026-04-26 13:10:18,717 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "5 - Af plan"
+2026-04-26 13:10:18,736 [ZAP-BootstrapGUI] INFO  DbMigrate - Migrating schema "PUBLIC" to version "6 - Auth report data"
+2026-04-26 13:10:18,749 [ZAP-BootstrapGUI] INFO  DbMigrate - Successfully applied 6 migrations to schema "PUBLIC", now at version v6 (execution time 00:00.042s)
+2026-04-26 13:10:22,525 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Auto-update Extension - Allows ZAP to check for updates
+2026-04-26 13:10:22,712 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Options Extension - Options Extension
+2026-04-26 13:10:23,115 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Edit Menu Extension - Edit Menu Extension
+2026-04-26 13:10:23,130 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing API Extension - Provides a rest based API for controlling and accessing ZAP
+2026-04-26 13:10:23,189 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing History Extension - History Extension
+2026-04-26 13:10:23,383 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionReveal - Show hidden fields and enable disabled fields
+2026-04-26 13:10:23,394 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Search Extension - Search messages for strings and regular expressions
+2026-04-26 13:10:23,494 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Breakpoint Extension - Allows you to intercept and modify requests and responses
+2026-04-26 13:10:23,784 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scan Extension - Passive scanner
+2026-04-26 13:10:23,786 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alerts Extension - Allows you to view and manage alerts
+2026-04-26 13:10:24,092 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Active Scan Extension - Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+2026-04-26 13:10:24,226 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionSequence - ExtensionSequence
+2026-04-26 13:10:24,240 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Standard Menus Extension - A set of common popup menus for miscellaneous tasks
+2026-04-26 13:10:24,270 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionBruteForce - Forced browsing of files and directories using code from the OWASP DirBuster tool
+2026-04-26 13:10:24,366 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Compare Extension - Compares 2 sessions and generates an HTML file showing the differences
+2026-04-26 13:10:24,370 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionInvoke - Invoke external applications passing context related information such as URLs and parameters
+2026-04-26 13:10:24,406 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Anti-CSRF Extension - Handles anti cross site request forgery (CSRF) tokens
+2026-04-26 13:10:24,443 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Extension - Authentication Extension
+2026-04-26 13:10:24,481 [ZAP-BootstrapGUI] INFO  ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+2026-04-26 13:10:24,489 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Users Extension - Users Extension
+2026-04-26 13:10:24,493 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Parameters Extension - Summarise and analyse FORM and URL parameters as well as cookies
+2026-04-26 13:10:24,535 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Script Extension - Script integration
+2026-04-26 13:10:24,651 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionScripts - Scripting console, supports all JSR 223 scripting languages
+2026-04-26 13:10:25,022 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Forced User Extension - Forced User Extension
+2026-04-26 13:10:25,034 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Sessions Extension - Extension handling HTTP sessions
+2026-04-26 13:10:25,102 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionZest - Zest is a specialized scripting language, originally, from Mozilla specifically designed to be used in security tools
+2026-04-26 13:10:26,447 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionDiff - ExtensionDiff
+2026-04-26 13:10:26,453 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Post Table View Extension - HTTP Panel Post Table View Extension
+2026-04-26 13:10:26,470 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Encoder Addon - Adds support for scriptable encoders to ZAP.
+2026-04-26 13:10:26,717 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Session Management Extension - Session Management Extension
+2026-04-26 13:10:26,730 [ZAP-BootstrapGUI] INFO  ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+2026-04-26 13:10:26,732 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Form Table View Extension - HTTP Panel Form Table View Extension
+2026-04-26 13:10:26,756 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSockets Support - Capture messages from WebSockets with the ability to set breakpoints.
+2026-04-26 13:10:26,849 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP/WSDL Support - Allows you to import a WSDL file containing operations which ZAP will access, adding them to the Sites tree.
+2026-04-26 13:10:26,855 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Core UI Extension - Core UI related functionality.
+2026-04-26 13:10:26,862 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authorization Extension - Authorization Extension
+2026-04-26 13:10:26,867 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Requester - Allows to manually edit and send messages.
+2026-04-26 13:10:27,057 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing AJAX Spider - AJAX Spider, uses Crawljax
+2026-04-26 13:10:27,211 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebDriver Provider - Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+2026-04-26 13:10:27,301 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionClientIntegration - Client Side Integration
+2026-04-26 13:10:27,545 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Refresh Sites Tree Extension - Adds menu item to refresh the Sites tree
+2026-04-26 13:10:27,557 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Help Extension - ZAP User Guide
+2026-04-26 13:10:27,755 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Call Home - Handles all of the calls to ZAP services
+2026-04-26 13:10:27,761 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Network Extension - Provides core networking capabilities.
+2026-04-26 13:10:29,424 [ZAP-BootstrapGUI] INFO  ConnectionOptions - Unsafe SSL/TLS renegotiation disabled.
+2026-04-26 13:10:29,426 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Extension Configuration Extension - Allows you to configure which extensions are loaded when ZAP starts
+2026-04-26 13:10:29,516 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Combined HTTP Panels Extension - Combined HTTP Panels Extension
+2026-04-26 13:10:29,569 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Hex View Extension - HTTP Panel Hex View Extension
+2026-04-26 13:10:29,631 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Image View Extension - HTTP Panel Image View Extension
+2026-04-26 13:10:29,649 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Query Table View Extension - HTTP Panel Query Table View Extension
+2026-04-26 13:10:29,670 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Panel Syntax Highlighter View Extension - HTTP Panel Syntax Highlighter View Extension
+2026-04-26 13:10:29,819 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Keyboard Configuration Extension - Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+2026-04-26 13:10:29,858 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Scanner Rule Configuration Extension - Active and passive rule configuration
+2026-04-26 13:10:29,884 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Statistics Extension - Statistics
+2026-04-26 13:10:29,903 [ZAP-BootstrapGUI] INFO  ExtensionStats - Start recording in memory stats
+2026-04-26 13:10:29,908 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Custom Pages Extension - Custom Pages Definition
+2026-04-26 13:10:29,926 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Sequence Automation - Sequence Automation Framework Integration
+2026-04-26 13:10:29,945 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scan Rules - Release status passive scan rules.
+2026-04-26 13:10:29,948 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Spider Automation - Client Spider Automation Framework Integration
+2026-04-26 13:10:29,962 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Map Import/Export - Client Map export support for Import/Export.
+2026-04-26 13:10:29,966 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Zest Script Recording Support - Allows recording client events as Zest scripts.
+2026-04-26 13:10:29,979 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionDomXSS - DOM XSS Active Scan Rule
+2026-04-26 13:10:30,090 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionTipsAndTricks - Tips and Tricks
+2026-04-26 13:10:30,093 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Match and Replace - Easy way to replace strings in requests and responses
+2026-04-26 13:10:30,117 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Replacer Automation - Replacer Automation Framework Integration
+2026-04-26 13:10:30,122 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Scripts Automation Framework Integration - Scripts Automation
+2026-04-26 13:10:30,138 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Spider Extension - Spider used for automatically finding URIs on a site.
+2026-04-26 13:10:30,282 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Spider Automation - Spider Automation Integration
+2026-04-26 13:10:30,288 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP Automation - SOAP Automation Framework Integration
+2026-04-26 13:10:30,292 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing SOAP Spider - SOAP Spider Integration
+2026-04-26 13:10:30,295 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Retest - Facilitates the verification of presence/absence of certain alerts.
+2026-04-26 13:10:30,299 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Import - Allows you to spider and import OpenAPI (Swagger) definitions 
+2026-04-26 13:10:30,326 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Automation - OpenAPI Automation Framework Integration
+2026-04-26 13:10:30,329 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Scripts - Adds scripts relevant to OpenAPI specifications.
+2026-04-26 13:10:30,331 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OpenAPI Spider - OpenAPI Spider Integration
+2026-04-26 13:10:30,338 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Helper - Authentication Helper
+2026-04-26 13:10:30,796 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Client Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated Client Spider scan.
+2026-04-26 13:10:30,800 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Authentication Helper Reports - Authentication Helper Reports
+2026-04-26 13:10:30,805 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing AJAX Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated AJAX Spider scan.
+2026-04-26 13:10:30,808 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionGettingStarted - The ZAP Getting Started Guide
+2026-04-26 13:10:30,811 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Out-of-band Application Security Testing - Adds Out-of-band Application Security Testing functionality.
+2026-04-26 13:10:30,896 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing OAST Scripts - Adds OAST scripts.
+2026-04-26 13:10:30,898 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Ajax Spider Automation - Ajax Spider Automation Framework Integration
+2026-04-26 13:10:30,911 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Database Extension - Provides databases and persistence capabilities.
+2026-04-26 13:10:30,914 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Automation Framework - Provides functionality to simplify using ZAP in an automated manner
+2026-04-26 13:10:31,019 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Zest Import/Export - Zest script export and import support for Import/Export.
+2026-04-26 13:10:31,027 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start panel  - Adds the Quick Start panel for scanning and exploring applications
+2026-04-26 13:10:31,199 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Ajax Spider integration - Add the option to use the Ajax Spider in the Quick Start scan
+2026-04-26 13:10:31,223 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start HUD Integration - HUD integration for the quick start panel
+2026-04-26 13:10:31,227 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Browser Launcher - Launch browsers preset proxying through ZAP
+2026-04-26 13:10:31,319 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Quick Start Spider Integration - Adds the option to use the traditional Spider in the Quick Start scan.
+2026-04-26 13:10:31,326 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionAlertFilters - Context alert rules filter
+2026-04-26 13:10:31,352 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2026-04-26 13:10:31,358 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scanner Extension - Provides core passive scanning capabilities.
+2026-04-26 13:10:31,475 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Passive Scanner Automation Framework Extension - Provides jobs and result data related to the passive scanner.
+2026-04-26 13:10:31,479 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionHUD - Heads Up Display
+2026-04-26 13:10:37,195 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionHUDlaunch - ExtensionHUDlaunch
+2026-04-26 13:10:37,197 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionOnlineMenu - The Online menu links
+2026-04-26 13:10:37,201 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Report Generator - Templated and themed report generation functionality
+2026-04-26 13:10:37,220 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Report Generation Automation Integration - Report Generation Automation Integration
+2026-04-26 13:10:37,224 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSocket Fuzzer - Allows to fuzz WebSocket messages.
+2026-04-26 13:10:37,231 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing WebSocket Message Editor - Provides the WebSocket Message Editor dialogues.
+2026-04-26 13:10:37,346 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Retire.js - Retire.js
+2026-04-26 13:10:37,351 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Vulnerable JS Library (Powered by Retire.js)
+2026-04-26 13:10:37,354 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Advance Fuzzer - Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+2026-04-26 13:10:37,365 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing HTTP Fuzzer - Allows to fuzz HTTP messages.
+2026-04-26 13:10:37,411 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionGraphQl - Allows you to inspect and attack GraphQL endpoints.
+2026-04-26 13:10:37,436 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraphQL Automation - GraphQL Automation Framework Integration
+2026-04-26 13:10:37,443 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraphQL Spider - GraphQL Spider Integration
+2026-04-26 13:10:37,444 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionInsights - Insights Extension
+2026-04-26 13:10:37,483 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+2026-04-26 13:10:37,486 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Insights Reports Extension - Adds Insights to the report data
+2026-04-26 13:10:37,488 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Import/Export - Import and Export functionality supporting multiple formats.
+2026-04-26 13:10:37,514 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Import/Export Automation - Import/Export Automation Framework Integration
+2026-04-26 13:10:37,518 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Common Library - A library of shared functionality
+2026-04-26 13:10:37,540 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Postman Import - Allows you to spider and import Postman collections
+2026-04-26 13:10:37,545 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Postman Automation - Postman Automation Framework Integration
+2026-04-26 13:10:37,547 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing ExtensionFormHandler - This extension allows a user to change the default values used for generated content (e.g. spiders, importers).
+2026-04-26 13:10:37,575 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing GraalVM JavaScript Engine Extension - Provides the GraalVM JavaScript engine for ZAP scripting.
+2026-04-26 13:10:41,331 [ZAP-BootstrapGUI] INFO  ExtensionLoader - Initializing Active Scan Rules - Release status active scan rules
+2026-04-26 13:10:42,543 [ZAP-BootstrapGUI] ERROR ExtensionClientIntegration - Failed to get or create Firefox profile zap-client-profile
+2026-04-26 13:10:42,547 [ZAP-BootstrapGUI] INFO  ExtensionKeyboard - Initializing keyboard shortcuts
+2026-04-26 13:10:50,253 [ZAP-BootstrapGUI] INFO  CallbackService - Started callback service on 0.0.0.0:41587
+2026-04-26 13:10:50,424 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Anti-clickjacking Header
+2026-04-26 13:10:50,428 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Application Error Disclosure
+2026-04-26 13:10:50,430 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Big Redirect Detected (Potential Sensitive Information Leak)
+2026-04-26 13:10:50,431 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Re-examine Cache-control Directives
+2026-04-26 13:10:50,433 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Charset Mismatch
+2026-04-26 13:10:50,435 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Content Security Policy (CSP) Header Not Set
+2026-04-26 13:10:50,436 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: CSP
+2026-04-26 13:10:50,443 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Content-Type Header Missing
+2026-04-26 13:10:50,444 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie No HttpOnly Flag
+2026-04-26 13:10:50,446 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Loosely Scoped Cookie
+2026-04-26 13:10:50,448 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie without SameSite Attribute
+2026-04-26 13:10:50,452 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie Without Secure Flag
+2026-04-26 13:10:50,456 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cross-Domain Misconfiguration
+2026-04-26 13:10:50,458 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+2026-04-26 13:10:50,459 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Absence of Anti-CSRF Tokens
+2026-04-26 13:10:50,461 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Directory Browsing
+2026-04-26 13:10:50,467 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Hash Disclosure
+2026-04-26 13:10:50,469 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Heartbleed OpenSSL Vulnerability (Indicative)
+2026-04-26 13:10:50,470 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: In Page Banner Information Leak
+2026-04-26 13:10:50,475 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Private IP Disclosure
+2026-04-26 13:10:50,478 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Session ID in URL Rewrite
+2026-04-26 13:10:50,480 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Debug Error Messages
+2026-04-26 13:10:50,481 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in URL
+2026-04-26 13:10:50,482 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+2026-04-26 13:10:50,486 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Information Disclosure - Suspicious Comments
+2026-04-26 13:10:50,489 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Weak Authentication Method
+2026-04-26 13:10:50,491 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTP to HTTPS Insecure Transition in Form Post
+2026-04-26 13:10:50,496 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTPS to HTTP Insecure Transition in Form Post
+2026-04-26 13:10:50,498 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Insecure JSF ViewState
+2026-04-26 13:10:50,500 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Java Serialization Object
+2026-04-26 13:10:50,505 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Reverse Tabnabbing
+2026-04-26 13:10:50,508 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Secure Pages Include Mixed Content
+2026-04-26 13:10:50,512 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Modern Web Application
+2026-04-26 13:10:50,518 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: PII Disclosure
+2026-04-26 13:10:50,519 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Script Served From Malicious Domain (polyfill)
+2026-04-26 13:10:50,521 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Retrieved from Cache
+2026-04-26 13:10:50,527 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: HTTP Server Response Header
+2026-04-26 13:10:50,529 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Strict-Transport-Security Header
+2026-04-26 13:10:50,531 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Sub Resource Integrity Attribute Missing
+2026-04-26 13:10:50,534 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Timestamp Disclosure
+2026-04-26 13:10:50,537 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable Charset
+2026-04-26 13:10:50,543 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Cookie Poisoning
+2026-04-26 13:10:50,545 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable HTML Element Attribute (Potential XSS)
+2026-04-26 13:10:50,547 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: User Controllable JavaScript Event (XSS)
+2026-04-26 13:10:50,550 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Off-site Redirect
+2026-04-26 13:10:50,553 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Username Hash Found
+2026-04-26 13:10:50,557 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Viewstate
+2026-04-26 13:10:50,560 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-AspNet-Version Response Header
+2026-04-26 13:10:50,562 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Backend-Server Header Information Leak
+2026-04-26 13:10:50,566 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-ChromeLogger-Data (XCOLD) Header Information Leak
+2026-04-26 13:10:50,568 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Content-Type-Options Header Missing
+2026-04-26 13:10:50,571 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: X-Debug-Token Information Leak
+2026-04-26 13:10:50,578 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s)
+2026-04-26 13:10:50,581 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: ZAP is Out of Date
+2026-04-26 13:10:50,586 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Script Passive Scan Rules
+2026-04-26 13:10:50,593 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: WSDL File Detection
+2026-04-26 13:10:50,600 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Authentication Request Identified
+2026-04-26 13:10:50,603 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Session Management Response Identified
+2026-04-26 13:10:50,606 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Verification Request Identified
+2026-04-26 13:10:50,610 [ZAP-BootstrapGUI] INFO  ScanRuleManager - Loaded passive scan rule: Stats Passive Scan Rule
+2026-04-26 13:10:50,716 [AWT-EventQueue-0] INFO  Control - New Session
+2026-04-26 13:10:50,725 [AWT-EventQueue-0] INFO  Control - Create and Open Untitled Db
+2026-04-26 13:11:46,304 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:46,416 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:46,760 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:46,849 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:47,996 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:49,470 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:49,523 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:49,570 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:11:49,626 [ZAP-IO-Server-1-2] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:12:12,853 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:12:12,874 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:12:12,982 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:12:12,998 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:12:13,011 [ZAP-IO-Server-1-1] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:14:31,406 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:14:31,443 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:14:31,572 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:14:31,610 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:14:31,632 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:14:31,669 [ZAP-IO-Server-1-5] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:51,781 [ZAP-IO-Server-1-8] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:51,851 [ZAP-IO-Server-1-8] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:53,908 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,002 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,224 [ZAP-IO-Server-1-10] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,288 [ZAP-IO-Server-1-7] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,452 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,532 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,645 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,699 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,754 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:54,803 [ZAP-IO-Server-1-8] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:59,579 [ZAP-IO-Server-1-12] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:59,678 [ZAP-IO-Server-1-17] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:59,835 [ZAP-IO-Server-1-16] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:17:59,970 [ZAP-IO-Server-1-13] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:00,350 [ZAP-IO-Server-1-13] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:00,695 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:00,932 [ZAP-IO-Server-1-19] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:01,137 [ZAP-IO-Server-1-17] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:01,511 [ZAP-IO-Server-1-11] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:02,612 [ZAP-IO-Server-1-18] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:02,925 [ZAP-IO-Server-1-18] WARN  API - Request to API URL https://zap/favicon.ico from 172.18.0.3 not permitted
+2026-04-26 13:18:08,067 [ZAP-PassiveScan-5] WARN  PassiveScanTask - Passive Scan rule Vulnerable JS Library (Powered by Retire.js) took 7 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:18:22,938 [ZAP-PassiveScan-7] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 28 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-26 13:18:23,010 [ZAP-PassiveScan-1] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 27 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-26 13:18:26,439 [ZAP-PassiveScan-4] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 22 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-26 13:18:26,574 [ZAP-PassiveScan-6] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 23 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-26 13:18:28,603 [ZAP-PassiveScan-8] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 16 seconds to scan http://juice-shop:3000/chunk-4MIYPPGW.js application/javascript; charset=UTF-8 380661
+2026-04-26 13:18:32,883 [ZAP-PassiveScan-7] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 8 seconds to scan http://juice-shop:3000/chunk-LHKS7QUN.js application/javascript; charset=UTF-8 236053
+2026-04-26 13:18:39,050 [ZAP-PassiveScan-2] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 39 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:18:39,819 [ZAP-PassiveScan-5] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 29 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:18:40,367 [ZAP-PassiveScan-3] WARN  PassiveScanTask - Passive Scan rule Information Disclosure - Suspicious Comments took 23 seconds to scan http://juice-shop:3000/main.js application/javascript; charset=UTF-8 1363371
+2026-04-26 13:29:02,435 [ZAP-BrowserLauncher] ERROR ExtensionQuickStartLaunch - Could not start a new session. Response code 500. Message: session not created
+from unknown error: cannot find Chrome binary 
+Host info: host: '9fec2803bd52', ip: '172.18.0.3'
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.2-microsoft-standard-WSL2', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --ignore-certificate-errors, --remote-debugging-pipe, --enable-unsafe-extension-d...], extensions: []}, proxy: Proxy(manual, http=172.18.0..., webSocketUrl: true}]}]
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from unknown error: cannot find Chrome binary 
+Host info: host: '9fec2803bd52', ip: '172.18.0.3'
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.87.2-microsoft-standard-WSL2', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --ignore-certificate-errors, --remote-debugging-pipe, --enable-unsafe-extension-d...], extensions: []}, proxy: Proxy(manual, http=172.18.0..., webSocketUrl: true}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:195)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:290)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:213)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:115)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:92)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:76)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.createWebDriver(ExtensionSelenium.java:1179)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getWebDriver(ExtensionSelenium.java:930)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getWebDriver(ExtensionSelenium.java:668)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getProxiedBrowser(ExtensionSelenium.java:839)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getProxiedBrowserByName(ExtensionSelenium.java:779)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getProxiedBrowserByName(ExtensionSelenium.java:755)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getProxiedBrowserByName(ExtensionSelenium.java:739)
+	at org.zaproxy.zap.extension.selenium.ExtensionSelenium.getProxiedBrowserByName(ExtensionSelenium.java:729)
+	at org.zaproxy.zap.extension.quickstart.launch.ExtensionQuickStartLaunch.lambda$launchBrowser$1(ExtensionQuickStartLaunch.java:221)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-26 14:00:14,527 [ZAP-IO-Server-1-21] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:00:15,601 [ZAP-IO-Server-1-21] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:00:15,606 [ZAP-IO-Server-1-21] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:00:15,613 [ZAP-IO-Server-1-21] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:18:32,820 [ZAP-IO-Server-1-26] WARN  API - Request to API URL http://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:18:33,930 [ZAP-IO-Server-1-26] WARN  API - Request to API URL http://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:18:33,942 [ZAP-IO-Server-1-26] WARN  API - Request to API URL http://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:18:33,948 [ZAP-IO-Server-1-26] WARN  API - Request to API URL http://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:18:39,003 [ZAP-IO-Server-1-26] WARN  API - Request to API URL http://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:19:09,074 [ZAP-IO-Server-1-26] WARN  API - Request to API URL http://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:20:08,625 [ZAP-IO-Server-1-26] WARN  API - Request to API URL https://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:20:09,756 [ZAP-IO-Server-1-26] WARN  API - Request to API URL https://zap/ from 172.18.0.1 not permitted
+2026-04-26 14:21:30,225 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:31,292 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:31,297 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:31,303 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://127.0.0.1:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:34,654 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://zap:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:35,720 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://zap:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:35,724 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://zap:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:35,740 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://zap:8081/ from 172.18.0.1 not permitted
+2026-04-26 14:21:40,804 [ZAP-IO-Server-1-28] WARN  API - Request to API URL http://zap:8081/ from 172.18.0.1 not permitted

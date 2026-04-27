@@ -1,0 +1,29 @@
+services:
+  # 1. OWASP Juice Shop (Target Aplikasi yang Rentan)
+  juice-shop:
+    image: bkimminich/juice-shop:latest
+    container_name: juice-shop
+    ports:
+      - "3000:3000"
+    networks:
+      - pentest-net
+    restart: always
+
+  # 2. OWASP ZAP (Official Image - Web UI via Browser)
+  owasp-zap:
+    image: ghcr.io/zaproxy/zaproxy:stable
+    container_name: owasp-zap
+    user: zap
+    ports:
+      - "8090:8080" # Akses Web UI ZAP di http://localhost:8090/zap
+      - "8081:8081" # Port Proxy ZAP
+    command: zap-webswing.sh
+    volumes:
+      - ./zap-reports:/home/zap
+    networks:
+      - pentest-net
+    restart: always
+
+networks:
+  pentest-net:
+    driver: bridge
